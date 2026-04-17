@@ -1,0 +1,15 @@
+digraph CMM_VAE {
+    rankdir=LR;
+    node [shape=box];
+
+    Inputs [label="Inputs"];
+    Encoder [label="Encoder"];
+    LatentSpace [label="Latent Space"];
+    Decoder [label="Decoder"];
+    Outputs [label="Outputs"];
+
+    Inputs -> Encoder;
+    Encoder -> LatentSpace;
+    LatentSpace -> Decoder;
+    Decoder -> Outputs;
+}
